@@ -1,0 +1,17 @@
+export const SET_LOCATIONS = "SET_LOCATIONS";
+export const SET_SCANNED_LOCATION = "SET_SCANNED_LOCATION";
+
+export const SET_SCANNING = "SET_SCANNING";
+export const UNSET_SCANNING = "UNSET_SCANNING";
+
+export const SET_PRINTING = "SET_PRINTING";
+export const STOP_PRINTING = "STOP_PRINTING";
+
+export const SCAN_LOCATION = "SCAN_LOCATION";
+export const SCAN_USER = "SCAN_USER";
+export const SCAN_DATA_FAIL = "SCAN_DATA_FAIL";
+
+export const CLEAR_ERROR = "CLEAR_ERROR";
+export const SET_ERROR = "SET_ERROR";
+export const SET_LOADING = "SET_LOADING";
+export const CLEAR_LOADING = "CLEAR_LOADING";
