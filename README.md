@@ -1,2 +1,44 @@
-# it.sfscon.app.registration
-This repository contains the source code of the SFSCON registration app. The SFSCON registration app is an Android app that allows the SFSCON organizers to manage the check-in process, by scanning a QR code to recognize a participant and print his label.
+# opencon-scan-app
+
+OPENCON mobile application
+
+## Run Developer Environment
+
+- on first start:
+
+  - go to expo, create an account, then create a new project and copy the following commands in the root of your project:
+
+  - eas init --id [projectId]
+
+  - if you already don't have eas-cli, run npm install --global eas-cli
+
+  - run npm install
+
+  - run npx expo-doctor to make sure that dependencies are up to date and compatible with the current version of expo
+
+```bash
+npx expo start
+```
+
+## Pre-build
+
+- run eas build:configure and follow further instructions
+
+- run eas update:conigure and follow further instructions
+
+- execute prepare script:
+
+```bash
+./prepare_build.sh [option]    options: test / prod
+```
+
+## Build
+
+```bash
+./prepare_build.sh
+rm __metro_cache__
+eas build --profile prod
+```
+
+- If you need to start a build on a simulator, include "simulator: true" in eas.json in desired configuration.
+- By default it is included in "test" profile.
